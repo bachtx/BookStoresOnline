@@ -274,7 +274,7 @@ a {text-decoration:  none; color: #555454; }
 	margin-top:45px;
 }
 .info_deal img{position:absolute;left:90px;top:75px;}
-.info_deal .con{position:absolute;left:54px;top:205px;text-align:center;}
+.info_deal .con{position:absolute;left:60px;top:205px;text-align:center;}
 .info_deal .pri{color:#ffffff;font-size:28px;margin-top:-5px;}
 .info_deal .save{font-size:22px;color:#f3f3f3}
 .info_deal a{padding:2px 20px;height:30px;line-height:30px;background:#5dbb5d;border-radius:5px;color:#fff;font-size:18px;}

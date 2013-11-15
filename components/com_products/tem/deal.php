@@ -15,6 +15,18 @@
 	<div class='con'>
 		<p class='save'>Save <?php echo $persen; ?>% Today</p>
 		<p class='pri'>$.<?php echo $row['cur_price']?>.00</p>
-		<a href="#">Buy now</a>
+		<a href="#" class="btn_cart" pro_id="<?php echo $row['pro_id'];?>">Add Cart</a>
 	</div>
 </div>
+<script type='text/javascript'>
+	$(document).ready(function(){
+		$('.btn_cart').click(function(){
+			var proid= $(this).attr('pro_id');
+			$.post('addcart.php',{'proid':proid},function(data){
+			//alert(data);
+				alert('Add Cart Sucess !');
+				window:location="index.php";
+			})
+		})
+	})   
+</script>
