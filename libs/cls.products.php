@@ -118,9 +118,11 @@ class CLS_PRODUCTS{
 				<img src="images/name.png" alt="name"/>
 				<p><?php echo $name;?></p>
 			</div><!--.img-->
-
+			<b><p class="review">
+				Title:<?php echo "  ".$row['email'];?>
+			</p></b>
 			<p class="review">
-				<?php echo $row['fulltext'];?>
+				<?php echo $row['fulltext']."<b>    at   ".$row['cdate']."</b>";?>
 			</p>
 		</div><!--.name-->
 		<?php	

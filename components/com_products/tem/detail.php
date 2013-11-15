@@ -78,8 +78,8 @@ if(isset($_GET['id']))
 					<input type="text" name="name" class="c_name" />
 				</p>
 				<p>
-					<label>email </label>
-					<input type="text"  name="email" class="c_title"/>
+					<label>Title </label>
+					<input type="text"  name="title" class="c_title"/>
 				</p>
 				<p>
 					<label>Message </label>
