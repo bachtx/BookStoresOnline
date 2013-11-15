@@ -205,18 +205,39 @@ $(document).ready(function(){
 	$('#opt_ship1').click(function(){$('#address').show();});
 	$('#opt_ship2').click(function(){$('#address').hide();});
 });
+function checkPhone(){
+     var re=/^[0][1-9][0-9]{8,9}$/;
+     var phone=$('#txt_tel').val();
+     if(!re.test(phone)){
+        return false;
+     }
+     return true;     
+}
+function checkEmail(){
+    re=/^(([a-zA-Z0-9])+\.?)*[a-zA-Z0-9]+@(([a-zA-Z0-9])+\.)+[a-zA-Z]{2,4}$/;
+    var email=$('#txt_email').val();
+    if(!re.test(email)){
+        return false;  
+    }
+    return true;
+}
 function checkinput_order(){
 	var error=false;
 	var err = [];
+	if(!checkPhone()){
+		error=true;
+		err[0]='<p>Error Number.</p>';
+		$('#txt_tel').css({'border':'1px solid #f00;'});
+	}
 	if($('#txt_name').val()==''){
 		error=true;
-		err[0]='<p>You did not entered your name.</p>';
+		err[1]='<p>You did not entered your name.</p>';
 		$('#txt_name').css({'border':'1px solid #f00;'});
-	}
-	if($('#txt_tel').val()==''){
+	}	
+	if(!checkEmail()){
 		error=true;
-		err[1]='<p>You did not entered your phone number.</p>';
-		$('#txt_tel').css({'border':'1px solid #f00;'});
+		err[2]='<p>Error Email.</p>';
+		$('#txt_email').css({'border':'1px solid #f00;'});
 	}
 	if(error){
 		$('#error').show();
