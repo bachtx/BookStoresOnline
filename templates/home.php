@@ -62,12 +62,12 @@
             <div class="box">
                 <ul>
 
-                    <li <?php if(($_SERVER['REQUEST_URI'] == '/BookStore_Online/home.html') || ($_SERVER['REQUEST_URI'] == '/BookStore_Online/')) echo "class='hover'"?>><a href="home.html">Home</a></li>
-                    <li <?php if($_SERVER['REQUEST_URI'] == '/BookStore_Online/products.html') echo "class='hover'"?>><a href="products.html">Products</a></li>
-					<li <?php if($_SERVER['REQUEST_URI'] == '/BookStore_Online/book1.html') echo "class='hover'"?>><a href="book1.html">Books 1$</a></li>
-                    <li <?php if($_SERVER['REQUEST_URI'] == '/BookStore_Online/payment.html') echo "class='hover'"?>><a href="payment.html">Payment</a></li>
-                    <li <?php if($_SERVER['REQUEST_URI'] == '/BookStore_Online/support.html') echo "class='hover'"?>><a href="support.html">Support</a></li>
-                    <li <?php if($_SERVER['REQUEST_URI'] == '/BookStore_Online/contacts.html') echo "class='hover'"?>><a href="contacts.html">Contacts</a></li>
+                    <li <?php if(($_SERVER['REQUEST_URI'] == '/BookStoresOnline/home.html') || ($_SERVER['REQUEST_URI'] == '/BookStoresOnline/')) echo "class='hover'"?>><a href="home.html">Home</a></li>
+                    <li <?php if($_SERVER['REQUEST_URI'] == '/BookStoresOnline/products.html') echo "class='hover'"?>><a href="products.html">Products</a></li>
+					<li <?php if($_SERVER['REQUEST_URI'] == '/BookStoresOnline/book1.html') echo "class='hover'"?>><a href="book1.html">Books 1$</a></li>
+                    <li <?php if($_SERVER['REQUEST_URI'] == '/BookStoresOnline/payment.html') echo "class='hover'"?>><a href="payment.html">Payment</a></li>
+                    <li <?php if($_SERVER['REQUEST_URI'] == '/BookStoresOnline/support.html') echo "class='hover'"?>><a href="support.html">Support</a></li>
+                    <li <?php if($_SERVER['REQUEST_URI'] == '/BookStoresOnline/contacts.html') echo "class='hover'"?>><a href="contacts.html">Contacts</a></li>
                 </ul>
                 <script type="text/javascript">
 //                    $(document).ready(function(){
