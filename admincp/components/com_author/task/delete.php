@@ -1,0 +1,11 @@
+<?php
+	defined('ISHOME') or die('Can not acess this page, please come back!');
+	$id='';
+	if(isset($_GET['id'])){
+		$id=(int)$_GET['id'];
+		$obj->Delete($id);
+		// Xóa tât ca quyên sách của tác giả này
+		//$pro->Delete($id);
+		echo "<script language=\"javascript\">window.location='index.php?com=".COMS."'</script>";
+	}
+?>

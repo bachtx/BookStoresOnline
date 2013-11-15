@@ -1,0 +1,18 @@
+RewriteEngine On
+#RewriteCond %{HTTP_REFERER} !^$
+#RewriteCond %{HTTP_REFERER} !^http://(www.)?igf.com.vn/ [nc]
+#RewriteRule .*.(gif|jpg|png)$ http://igf.com.vn/images/igf_logo.PNG [nc]
+
+RewriteRule ^home.html index.php
+RewriteRule ^contacts.html index.php?com=contacts
+RewriteRule ^payment.html index.php?com=payment
+RewriteRule ^products.html index.php?com=products&viewtype=random
+RewriteRule ^book1.html index.php?com=products&viewtype=book1
+RewriteRule ^search.html index.php?com=products&viewtype=search
+RewriteRule ^shopcart.html index.php?com=order&viewtype=cart
+RewriteRule ^order.html index.php?com=order&viewtype=order
+RewriteRule ^support.html index.php?com=contents&viewtype=block
+RewriteRule ^(.*)-cat([0-9]*).html index.php?com=products&viewtype=block&cat_id=$2
+RewriteRule ^(.*)-([0-9]*).html index.php?com=products&viewtype=detail&id=$2
+RewriteRule ^(.*)-bv([0-9]*).html index.php?com=contents&viewtype=detail&id=$2
+RewriteRule ^(.*)-gr([0-9]*).html index.php?com=contents&viewtype=block&id=$2

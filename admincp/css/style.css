@@ -1,0 +1,232 @@
+body{
+    font-family: SegoeWP,arial,sans-serif;
+    line-height: 150%;font-size:13px;
+    background-color: #F0F0F0;
+    background-position: center top;
+    color: #333;
+    margin: 0;padding: 0;
+}
+#container{
+    margin: auto;
+    background: #FFF;
+}
+.cpanel_main{
+    padding: 10px;
+}
+#header,#main,#footer{clear: both;width:100%;}
+/*navitor*/
+#header .navitor{
+    height:35px;
+    line-height: 35px;
+    background: #3399cc;
+    box-shadow: 0 0 0 1px #FFFFFF;
+}
+#header .navitor ul{
+    list-style: none;padding: 0px;margin: 0px;
+}
+.navitor ul li{
+    float: left;
+    position: relative;
+}
+.navitor li a{
+    border-right: 1px solid #CCCCCC;
+    color: #FFFFFF;
+    float: left;
+    height: 35px;
+    padding: 0 35px;
+    text-decoration: none;
+}
+.navitor ul li a:hover{
+	color:#FFF;
+	background: url(../images/li_menu_hover.png) repeat-x top right;
+}
+.navitor li ul{
+	width: 200px;
+	clear: both;
+	position: absolute;
+	z-index: 99;
+	background-color: #CCC;
+	padding: 0px 3px 5px;
+	border:#666 1px solid;
+	border-top: none;
+	opacity: 0.9!important;
+	display:none;
+	top:35px;
+}
+.navitor li:hover ul{
+    display: block;
+}
+.navitor li ul li{
+	display: block;
+	overflow: hidden;
+	float: none;
+	list-style: none;
+}
+.navitor li li a{
+	display: block;
+	width: 195px;
+	height: 30px;
+	line-height: 30px;
+	padding:0px;
+	text-indent: 21px;
+	color: #036;
+	border-bottom:#999 1px dashed;
+}
+.navitor li li a:hover{
+	background: none;
+	background-color: #999;
+}
+/*Emd navitor*/
+/*toolbar*/
+div#menus{ background-color: #EEE;}
+div#menus ul{
+	margin: 0px;
+	padding: 0px;
+	float: right;
+}
+div#menus ul li{
+	list-style: none;
+	display: inline;
+	float: left;
+}
+div#menus a{
+	float: left;
+	font-size: 11px;
+	text-align: center;
+	padding: 0 7px;
+	padding-top: 30px;
+	margin-left: 3px;
+	border-top: #FFF 1px solid;
+	border-left: #FFF 1px solid;
+	border-right: #999 1px solid;
+	border-bottom: #999 1px solid;
+}
+div#menus ul li a:hover{
+	text-decoration: none;
+	background-color: #FFF;
+}
+div#menus a.delete{
+	background: url(../images/icon-32-delete.png) no-repeat center 3px;
+}
+div#menus a.addnew{
+	background: url(../images/icon-32-new.png) no-repeat center 3px;
+}
+div#menus a.edit{
+	background: url(../images/icon-32-edit.png) no-repeat center 3px;
+}
+div#menus a.publish{
+	background: url(../images/icon-32-publish.png) no-repeat center 3px;
+}
+div#menus a.unpublish{
+	background: url(../images/icon-32-unpublish.png) no-repeat center 3px;
+}
+div#menus a.save{
+	background: url(../images/icon-32-save.png) no-repeat center 3px;
+}
+div#menus a.close{
+	background: url(../images/icon-32-cancel.png) no-repeat center 3px;
+}
+div#menus a.help{
+	background: url(../images/icon-32-help.png) no-repeat center 3px;
+}
+#menus h2{
+    margin: 0px;padding: 0px 20px;
+    color:#333;
+    font-size: 18px;
+}
+/*Table*/
+div#menus,div#action,div#list{
+	clear:both;
+	margin-bottom: 10px;
+	border:#89b8fa 1px solid; 
+	padding:10px;
+}
+div#action{
+	-moz-border-radius: 7px ;
+	-webkit-border-radius: 7px;
+    color:#333;
+}
+div#list{
+	-moz-border-radius: 0px 0px 7px 7px;
+	-webkit-border-radius: 0px 7px 7px;
+	height:auto;
+	padding: 5px 10px;
+}
+table.list{
+	border-left: #DDD 1px solid;
+	border-top: #DDD 1px solid;
+}
+table.list tr td,table.list tr th{
+	border-right: #DDD 1px solid;
+	border-bottom: #DDD 1px solid;
+	height: 25px;
+	overflow: hidden;
+}
+
+table td, table th {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+}
+table.list tr.header th, table.list tr.header td {
+    background-color: #CCCCCC;
+    font-weight: bold;
+    height: 29px;
+}
+table.list tr:hover td,table.list tr.active td{
+	background-color: #EEE;
+}
+/*end table*/
+#footer{
+    color:#333;
+    height:30px;
+    line-height: 30px;
+    border-top: 3px solid #999;
+}
+/*style login*/
+#loginlayout {
+    background: url("../images/bg_login.png") no-repeat scroll left center;
+    border: 1px solid #3399cc;
+    border-radius: 0 0 7px 7px;
+    font-weight: bold;
+    height: 145px;
+    margin: 3px auto 250px;
+    padding: 21px 0;
+    width: 400px;
+}
+#frm_login h3.header {
+    background-color: #3399cc;
+    border-radius: 5px 5px 0 0;
+    color: #FFFFFF;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    margin: 50px auto 0px;
+    padding: 0;text-align: center;
+    font-size:13px;
+    text-transform: uppercase;
+    width: 402px;
+}
+/*End style login*/
+.txtname_err,.txtcode_err{color:#ff0000;}
+#path{text-align:right; height:20px; line-height:20px;}
+div.paging a, p.paging a {
+    background-color: #DDDDDD;
+    height: 21px;
+    line-height: 21px;
+    margin: 1px;
+    padding: 0 5px;
+}
+a {
+    color: #003366;
+    text-decoration: none;
+}
+a.cur_page {
+    background-color: #3399CC !important;
+    color: #FFFFFF;
+}
+#list h1{
+	text-transform:uppercase;
+	font-size:17px;
+	margin:0px;
+
+}
